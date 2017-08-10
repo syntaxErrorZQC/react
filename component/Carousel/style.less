@@ -1,0 +1,50 @@
+.carousel {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+	li {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top:0;
+		transition: all 0.4s linear 0s;
+	}
+	a {
+		width: 100%;
+		height: 100%;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.slide_left {
+		left: -100%;
+	}
+	.slide_cur {
+		left: 0%;
+	}
+	.slide_right {
+		left: 100%;
+	}
+	.nodong {
+		transition: initial;
+	}
+}
+.point {
+	width: 30%;
+	display: flex;
+	justify-content:space-between;
+	position: absolute;
+	left:33%;
+	bottom: 10px;
+	li {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #aaa;
+	}
+	.cur {
+		background-color: #fff;
+	}
+}

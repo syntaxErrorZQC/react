@@ -1,0 +1,87 @@
+@import '../../style/method.less';
+.regist {
+	position: absolute;
+	left: 0;
+	right:0;
+	top:0;
+	bottom:0;
+	width: 100%;
+	background-color: #fafafa;
+	.rhint {
+		width: 80%;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		transform: all 1px ease 0s;
+		top: 120px;
+		left: 10%;
+		color: red;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 10px;
+		animation: donghua .6s cubic-bezier(0.59, 0.62, 0.49, 1.25) 0s 1 forwards,
+		donghuat 1s cubic-bezier(0.59, 0.62, 0.49, 1.25) 2s 1 forwards;
+	}
+	.rtitle{
+		font-weight: 400;
+		text-align: center;
+		background-color: #34C84A;
+		font-size: 20px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 20px;
+		.token{
+			.arrows_l(10px, #34C84A, #fff,3px);
+			position: absolute;
+			left: 0%;
+			top:10px;
+		}
+	}
+	.from {
+		display: inline-block;
+		width: 100%;
+		p{
+			width: 80%;
+			height: 40px;
+			border-bottom: 1px solid #f0f0f0;
+			margin:0 auto;
+			input{
+				width: 100%;
+				height: 100%;
+				padding-left: 10px;
+				background-color: #fafafa;
+				font-size: 16px;
+				border:none;
+			}
+		}
+		.checkCode{
+			position: relative;
+		}
+		.fetchCode {
+			.btn1(100px, 30px, #34C84A, #fff , #ccc, 20px, 14px, #ccc, #fff);
+			position: absolute;
+			right:5px;
+			top:3px;
+		}
+		.btn{
+			width: 80%;
+			margin:40px auto;
+			button{
+				width: 100%;
+				border-radius: 15px;
+				color: #fff;
+				height: 40px;
+				border:none;
+				font-size: 16px;
+				background-color: #34C84A;
+			}
+		}
+		.clause {
+			a{
+				color: #34C84A;
+			}
+			text-align: center;
+			
+		}
+	}
+}

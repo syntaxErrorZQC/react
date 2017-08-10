@@ -1,0 +1,99 @@
+@import '../../style/method.less';
+.landlord{
+	padding: 10px 0;
+	background-color: #fff;
+	.ltitle {
+		width: 100%;
+		height: 56px;
+		display: flex;
+		display: -webkit-flex;
+		background-color: #fff;
+		.picwrap {
+			flex:1;
+			position: relative;
+			.pic {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				.circleRahmen(40px, 40px);
+			}
+		}
+		.user {
+			flex:5;
+			padding-left: 10px;
+			box-sizing: border-box;
+			.uname {
+				height: 50%;
+				font-size: 16px;
+				// padding-left: 10px;
+				box-sizing: border-box;
+				// text-align: end;
+				line-height: 35px;
+				vertical-align: bottom;
+			}
+			.addr {
+				i {
+					.fonts('\e062', 14px);
+					padding-right: 5px;
+				}
+				height: 50%;
+				font-size: 14px;
+				color: #aaa;
+			}
+		}
+		.sumPeo {
+			flex:1;
+			p {
+				height: 50%;
+				font-size: 14px;
+				color: #aaa;
+			}
+			.count {
+				line-height: 35px;
+				font-size: 18px;
+				color:#4F9DFB;
+			}
+
+		}
+	}
+	.bar {
+		display: flex;
+		background-color: #fff;
+
+		// justify-content: 
+		a {
+			flex:3;
+			color: #444;
+			text-align: center;
+			i{
+				color: #F7594C;
+			}
+		}
+		a:nth-child(1){
+			i{
+				.fonts('\e111',14px);
+				margin-right: 10px;
+			}
+		}
+		a:nth-child(2){
+			i{
+				.fonts('\e143',18px);
+				margin-right: 10px;
+			}
+		}
+		a:nth-child(3){
+			i{
+				.fonts('\e091',18px);
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

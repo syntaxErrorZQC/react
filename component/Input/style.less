@@ -1,0 +1,71 @@
+@import '../../style/method.less';
+@height:30px;
+@bgc: #f1f1f1;
+@itemHeight: 30px;
+.input {
+	display: flex;
+	align-items:stretch;
+	padding: 5px 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
+	justify-content: space-between;
+	position: fixed;
+	z-index:999;
+	left: 0;
+	bottom: -1px;
+	background-color: #fff;
+	.btn{
+		flex:1.5;
+		overflow: hidden;
+		text-align: center;
+		i {
+			position: relative;
+			// top:2px;
+			border-radius: 50%;
+			display: inline-block;
+			width: @itemHeight;
+			height: @itemHeight;
+			line-height: @itemHeight;
+			.fonts('\231b',14px);
+			background-color: #f7f7f7;
+			color: #666;
+		}
+	}
+	.put{
+		flex:7;
+		border:none;
+		// background-color: @bgc;
+		border-radius: 8px;
+		border:1px solid @bgc;
+		margin-right: 5px;
+		font-size: 16px;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+	.func{
+		flex:4;
+		display: flex;
+		justify-content: space-between;
+		align-items:conter;
+		box-sizing: border-box;
+		padding-right: 5px;
+		img{
+			width: @itemHeight;
+			height: @itemHeight;
+		}
+	}
+	.inpBtn {
+		border-left:1px solid @bgc;
+		display: inline-block;
+		width: 8%;
+		text-align: center;
+		line-height: 20px;
+		position: absolute;
+		top:8.5px;
+		left: 58%;
+		i {
+			.fonts('\e092', 16px);
+		}
+	}
+}

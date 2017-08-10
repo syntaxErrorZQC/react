@@ -1,0 +1,165 @@
+// 画一个圆形图片相框, 参数标签:div>img
+.circleRahmen(@width:65px, @height:65px) {
+	width: @width;
+	height:@height;
+	border-radius: 50%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+// 字体图标, 参考标签: i
+.fonts(@fonts:'\e008', @fontSize:16px, @family: 'fonts') {
+	font-family: @family;
+	font-size: @fontSize;
+	vertical-align: middle;
+	position: relative;
+	&:after {
+		content: @fonts;
+	}
+}
+
+// 设置手机端背景颜色
+.bgColor(@bgc:#F1F5F4) {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	background-color: @bgc; 
+}
+
+// 三角形, 参考标签: i
+.trigon(@size:10px, @direction:left) {
+	display: inline-block;
+	border:@size solid transparent;
+	border-@{direction}-color: red;
+}
+// 箭头, 参考标签: i
+.arrows_r(@size:10px, @bg:#fff, @color:#000, @weight:3px) {
+	display: inline-block;
+	border:@size solid transparent;
+	border-left-color: @color;
+	position: absolute;
+	&:after {
+		content:'';
+		position: absolute;
+		top:-@size;
+		left:-@size - @weight;
+		display: inline-block;
+		border:@size solid transparent;
+		border-left-color: @bg;
+	}
+}
+.arrows_l(@size:10px, @bg:#fff, @color:#000, @weight:3px) {
+	display: inline-block;
+	border:@size solid transparent;
+	border-right-color: @color;
+	position: absolute;
+	&:after {
+		content:'';
+		position: absolute;
+		top:-@size;
+		left:-@size + @weight;
+		display: inline-block;
+		border:@size solid transparent;
+		border-right-color: @bg;
+	}
+}
+
+
+// 遮罩mask
+.mask() {
+	background-color: rgba(0,0,0,.4);
+	position: fixed;
+	left: 0;
+	right:0;
+	top:0;
+	bottom:0
+}
+.btn2(@w: 80px, @h: 30px, @c: #444, @bgc: #fff , @bc: #ccc, @radius:8px, @s: 14px) {
+	background-color: @bgc;
+	display: inline-block;
+	width: @w;
+	line-height: @h;
+	border-radius: @radius;
+	color: @c;
+	border: 1px solid @bc;
+	font-size: @s;
+	text-align: center;
+	cursor:pointer; 
+}
+
+.btn1(@w: 80px, @h: 30px, @c: #444, @bgc: #fff , @bc: #ccc, @radius:8px, @s: 14px, @hbgc: #ccc, @hc:#fff) {
+	background-color: @bgc;
+	display: inline-block;
+	width: @w;
+	line-height: @h;
+	border-radius: @radius;
+	color: @c;
+	border: 1px solid @bc;
+	font-size: @s;
+	text-align: center;
+	cursor:pointer; 
+	
+}
+
+// 按钮: a
+.btn(@w: 80px, @h: 30px, @bc: #ccc, @c: #444, @radius:8px, @s: 14px) {
+	display: inline-block;
+	width: @w;
+	line-height: @h;
+	border-radius: @radius;
+	color: @c;
+	border: 1px solid @bc;
+	font-size: @s;
+	text-align: center;
+	
+}
+
+
+/**** 定位 *****/
+.relative_t_l(@t:0px, @l:0px) {
+	position: relative;
+	top:@t;
+	left:@l;
+}
+.relative_t_r(@t:0px, @r:0px) {
+	position: relative;
+	top:@t;
+	right:@r;
+}
+.relative_b_l(@b:0px, @l:0px) {
+	position: relative;
+	bottom:@b;
+	left:@l;
+}
+.relative_b_r(@b:0px, @r:0px) {
+	position: relative;
+	bottom:@b;
+	right:@r;
+}
+
+.absolute_t_l(@t:0px, @l:0px) {
+	position: absolute;
+	top:@t;
+	left:@l;
+}
+.absolute_t_r(@t:0px, @r:0px) {
+	position: absolute;
+	top:@t;
+	right:@r;
+}
+.absolute_b_l(@b:0px, @l:0px) {
+	position: absolute;
+	bottom:@b;
+	left:@l;
+}
+.absolute_b_r(@b:0px, @r:0px) {
+	position: absolute;
+	bottom:@b;
+	right:@r;
+}

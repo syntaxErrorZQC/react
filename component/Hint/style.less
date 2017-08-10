@@ -1,0 +1,24 @@
+@import '../../style/method.less';
+.hint {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+	z-index: 9999;
+	.mask();
+	.bg {
+		width: 300px;
+		background-color: #fff;
+		padding: 20px 15px;
+		position: relative;
+		top:-60px;
+	}
+	.btnwrap {
+		margin-top:20px;
+		overflow: hidden;
+		.btn {
+			float: right;
+			.btn2(80px, 30px, #fff, #448AFB , #fff, 8px, 14px);
+		}
+	}
+}

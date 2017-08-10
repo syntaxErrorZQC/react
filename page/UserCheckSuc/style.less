@@ -1,0 +1,40 @@
+@import '../../style/method.less';
+
+@hint: #1DBF96;
+@picSize: 80px;
+.userCheckSuc {
+	.contentHint {
+		height: 200px;
+		position: relative;
+		background-color: #fff;
+		.checkPic {
+			border:3px solid @hint;
+			height: @picSize;
+			width: @picSize;
+			border-radius: 50%;
+			position: absolute;
+			top: 40px;
+			left: 50%;
+			margin-left: -@picSize/2;
+			text-align: center;
+			&>i {
+				.fonts('\e013', 40px);
+				color: @hint;
+				line-height: @picSize;
+			}
+
+		}
+		.checkText {
+			color: @hint;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: center;
+			padding-top: 130px;
+		}
+		.checkHint {
+			text-align: center;
+			font-size: 14px;
+			color: #aaa;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@import '../../style/method.less';
+.HistoryTag {
+	overflow: hidden;
+	.htime {
+		padding-left: 10px;
+		height: 40px;
+		line-height: 40px;
+		&>i {
+			.fonts('\e023', 16px);
+			margin-right: 5px;
+		}
+		color: #ccc;
+	}
+	.hcontent {
+		overflow: hidden;
+		
+		// height: 200px;
+		background-color: #fff;
+		padding: 15px;
+
+		.himgroom {
+			float: left;
+			margin-right: 15px;
+			overflow: hidden;
+			border-radius: 5px;
+			width: 120px;
+			height: 120px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.huser{
+			float: left;
+			line-height: 40px;
+			&>p:first-child{
+				height: 80px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,114 @@
+@import '../../style/method.less';
+@height2: 50px;
+.userEdit {
+	background-color: #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	.utitle{
+		background-color:#FCDE32; 
+		line-height: @height2;
+		position: relative;
+		text-align: center;
+		border-bottom: 1px solid #f1f1f1;
+		.backLink {
+			position: absolute;
+			left:0%;
+			display: block;
+			height: @height2;
+			width: @height2;
+			text-align: center;
+		}
+		.save {
+			position: absolute;
+			right:4%;
+			font-size: 14px;
+			color: #448AFB;
+		}
+
+	}
+}
+.userEdit ul {
+	&>li {
+		border-bottom: 1px solid #f1f1f1;
+		height: @height2;
+		line-height: @height2;
+		padding-left: 10px;
+		position: relative;
+	}
+	&>li span {
+		color: #444;
+	}
+	button {
+		// .btn1();
+		.btn1(45px, 20px, #444, #fff, #dfdfdf, 15px, 13px, #ccc, #fff);
+		margin: 0 5px;
+	}
+	button.cur {
+		background-color: #508FF2;
+		color: #fff;
+	}
+	input {
+		font-size: 14px;
+		font-weight: 400;
+	}
+	li i {
+		position: absolute;
+		right: 10px;
+		top: 16px;
+	}
+	.flexParent {
+		display: flex;
+		justify-content: space-between;
+	}
+	.flex3 {
+		flex:3;
+	}
+	.flex9 {
+		flex:9;
+	}
+	.picture {
+		line-height: 60px;
+		height: 60px;
+		padding: 0;
+		a {
+			padding: 5px 0px 5px 10px;
+			position: relative;
+			span {
+				flex:3;
+			}
+			.wrap {
+				flex:9;
+				.pic {
+					.circleRahmen(50px, 50px);
+				}
+			}
+			&>i {
+				position: absolute;
+				right: 10px;
+				top: 20px;
+			}
+		}
+	}
+	.hobby {
+		height: 100px;
+		line-height: inherit;
+		&>.flex3 {
+			line-height: 100px;
+		}
+		.btnlist>button{
+			margin-top: 15px;
+		}
+	}
+}
+i.back{
+	.arrows_l(8px, #FCDE32, #000, 2px);
+	position: absolute;
+	left: 10px;
+	top:18px;
+}
+i.rightToken {
+	.arrows_r(8px, #fff, #aaa, 2px);
+}

@@ -1,0 +1,87 @@
+@import '../../style/method.less';
+.Userbar {
+	margin-top: 10px;
+	background-color: #fff;
+	ul{
+		padding-left: 10%;
+		line-height: 40px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		color: #ccc;
+	}
+	li{
+		height: 40px;
+		border-bottom: 1px solid #ccc;
+		position: relative;
+	}
+	li:last-child {
+		border:none;
+	}
+	li a{
+		display: inline-block;
+		width: 100%;
+		color: #444;
+	}
+
+	i.left {
+		position: absolute;
+		left: -8%;
+		top: 0px;
+	}
+	i.right {
+		.arrows_r(10px, #fff, #ccc, 3px);
+		position: absolute;
+		right: 0px;
+		top: 10px;
+	}
+}
+i.s1 {
+	// "\e141" 历史
+	.fonts('\e141',16px);
+	color: #4F9DFB;
+}
+i.s2 {
+	// 主播数据 "\e218"
+	.fonts('\e218',16px);
+	color: #F58220;
+}
+i.s3 {
+	// "\e102" 兑换
+	.fonts('\e102',16px);
+	color: #D71345;
+}
+i.s4 {
+	// "\e148" 充值
+	.fonts('\e148',16px);
+	color: #76AB0D;
+}
+i.s5 {
+	// 私信  "\e171"
+	.fonts('\e171',16px);
+	color: #F58220;
+}
+i.s6 {
+	// 等级中心 "\e215"
+	.fonts('\e215',16px);
+	color: #00959B;
+}
+i.s7 {
+	// 我的任务  "\e139"
+	.fonts('\e139',16px);
+	color: #007947;
+}
+i.s8 {
+	// 实名认证 "\e246"
+	.fonts('\e246',16px);
+	color: #DBCE8F;
+}
+i.s9 {
+	// 编辑   "\e204"
+	.fonts('\e204',16px);
+	color: #F15A22;
+}
+i.s10 {
+	// "\e019" 设置
+	.fonts('\e019',16px);
+	color: #596032;
+}

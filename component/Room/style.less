@@ -1,0 +1,84 @@
+@import '../../style/method.less';
+.room {
+	.rtitle {
+		width: 100%;
+		height: 56px;
+		display: flex;
+		display: -webkit-flex;
+		.picwrap {
+			flex:1;
+			position: relative;
+			.pic {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				.circleRahmen(40px, 40px);
+			}
+		}
+		.user {
+			flex:5;
+			padding-left: 10px;
+			box-sizing: border-box;
+			.uname {
+				height: 50%;
+				font-size: 16px;
+				// padding-left: 10px;
+				box-sizing: border-box;
+				// text-align: end;
+				line-height: 35px;
+				vertical-align: bottom;
+			}
+			.addr {
+				i {
+					.fonts('\e062', 14px);
+					padding-right: 5px;
+				}
+				height: 50%;
+				font-size: 14px;
+				color: #aaa;
+			}
+		}
+		.sumPeo {
+			flex:1;
+			p {
+				height: 50%;
+				font-size: 14px;
+				color: #aaa;
+			}
+			.count {
+				line-height: 35px;
+				font-size: 18px;
+				color:#4F9DFB;
+			}
+
+		}
+	}
+	.picShow {
+		width: 100%;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.text {
+			position: absolute;
+			color: #fff;
+			top: 20px;
+			left:5%;
+			width: 50px;
+			line-height: 20px;
+			text-align: center;
+			border:1px solid #fff;
+			font-size: 14px;
+			border-radius: 5px;
+			box-shadow: inset 1px 1px 2px #666,1px 1px 2px #666;
+			text-shadow: 1px 1px 2px #666;
+		}
+		.rname {
+			color: #fff;
+			position: absolute;
+			font-size: 14px;
+			bottom: 10px;
+			left: 3%;
+		}
+	}
+}

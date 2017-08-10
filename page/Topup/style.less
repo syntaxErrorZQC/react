@@ -1,0 +1,59 @@
+.tuser {
+	overflow: hidden;
+	background-color: #fff;
+	&>p {
+		width: 50%;
+		float: left;
+		border-bottom: 1px solid #ccc;
+		line-height: 40px;
+		padding-left: 10px;
+		.ttile {
+			display: inline-block;
+			color: #ccc;
+			font-size: 14px;
+			width: 40%;
+		}
+	}
+}
+.price {
+	.ex {
+		padding-left: 10px;
+		color: #999;
+		font-size: 14px;
+		line-height: 50px;
+	}
+	ul {
+		background-color: #fff;
+		font-size: 15px;
+		li {
+			line-height: 50px;
+			padding:0 30px;
+			border-bottom:1px solid #ccc;
+			overflow: hidden;
+
+			&>span:last-child {
+				float: right;
+			}
+		}
+		&>.tcur {
+			background-color: rgba(179, 214, 110, 0.4);
+			position: relative;
+			font-family: 'fonts';
+			&:before {
+				content:'✔';
+				display: block;
+				line-height: 14px;
+				border-radius: 50%;
+				text-align: center;
+				position: absolute;
+				color: #fff;
+				background-color: #42CC61;
+				font-size: 12px;
+				width: 18px;
+				height: 18px;
+				left:8px;
+				top:17px;
+			}
+		}
+	}
+}
